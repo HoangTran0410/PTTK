@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="main.js"></script>
+</head>
+<body>
+	<table>
+		<tr>
+			<td>Q:</td>
+			<td><input type="text" id="inpQ" value="GHIKLM"></td>
+		</tr>
+		<tr>
+			<td>F: </td>
+			<td>	
+				<textarea id="inpF">GH->L,I->M,L->K,HM->G,GK->I,H->L</textarea>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2">
+				<button id="btnCalculate">Tìm tất cả khóa</button>
+				<select name="" id="kieuTim">
+					<option value="lapBang">Lập bảng</option>
+					<option value="thayNam">Cách thầy Nam</option>
+					<option value="deQuy">Đệ quy cách thầy Nam (Chậm)</option>
+				</select>
+			</td>
+		</tr>
+		<tr>
+			<td>Kết quả: </td>
+			<td><textarea id="txKetQua"></textarea></td>
+		</tr>
+	</table>
+	
+	<input type="checkbox" id="chbHienCachLam" checked> Hiện chi tiết cách làm <br>
+	<button id="btnXoaLogger">Xóa cách làm</button>
+	<p>Chi tiết cách làm:</p>
+	<div id="loggerDiv"></div>
+	
+</body>
+</html>
