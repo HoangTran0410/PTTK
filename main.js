@@ -10,7 +10,7 @@ window.onload = function() {
     	pttk = new PTTK(Q, F);
 
     	let kq = pttk.timTatCaKhoa(document.getElementById('chbHienCachLam').checked);
-    	document.getElementById('txKetQua').innerHTML = kq.toString();
+    	document.getElementById('txKetQua').value = kq.toString();
     })
     btnCal.click();
 
